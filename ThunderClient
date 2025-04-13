@@ -1,0 +1,147 @@
+{
+	"clientName": "Thunder Client",
+	"collectionName": "playlistAPI",
+	"collectionId": "adc72e95-0e00-4ef7-b225-178f0dd41569",
+	"dateExported": "2025-04-13T16:49:06.178Z",
+	"version": "1.2",
+	"folders": [
+		{
+			"_id": "3392c233-c19a-4fd3-aa41-78ef43f57498",
+			"name": "playlistRoutes",
+			"containerId": "",
+			"created": "2025-04-13T16:30:54.271Z",
+			"sortNum": 10000
+		},
+		{
+			"_id": "b544867c-bb07-4a40-965a-532ff268846b",
+			"name": "musicRoutes",
+			"containerId": "",
+			"created": "2025-04-13T16:31:12.466Z",
+			"sortNum": 20000
+		}
+	],
+	"requests": [
+		{
+			"_id": "57ea56ea-3c31-4f9d-9871-e74436d1066a",
+			"colId": "adc72e95-0e00-4ef7-b225-178f0dd41569",
+			"containerId": "3392c233-c19a-4fd3-aa41-78ef43f57498",
+			"name": "getAllPlaylist",
+			"url": "http://localhost:3030/playlists/",
+			"method": "GET",
+			"sortNum": 10000,
+			"created": "2025-04-12T19:27:26.266Z",
+			"modified": "2025-04-12T20:54:46.916Z",
+			"headers": []
+		},
+		{
+			"_id": "885931df-64c6-4d95-abda-410dc0d8e480",
+			"colId": "adc72e95-0e00-4ef7-b225-178f0dd41569",
+			"containerId": "3392c233-c19a-4fd3-aa41-78ef43f57498",
+			"name": "getPlayListById",
+			"url": "http://localhost:3030/playlists/123",
+			"method": "GET",
+			"sortNum": 20000,
+			"created": "2025-04-12T19:28:07.811Z",
+			"modified": "2025-04-12T19:29:15.707Z",
+			"headers": []
+		},
+		{
+			"_id": "f32ce4bf-4353-46ab-9e34-d93510bf79b8",
+			"colId": "adc72e95-0e00-4ef7-b225-178f0dd41569",
+			"containerId": "3392c233-c19a-4fd3-aa41-78ef43f57498",
+			"name": "deletePlaylist",
+			"url": "http://localhost:3030/playlists/delete/2869",
+			"method": "DELETE",
+			"sortNum": 25000,
+			"created": "2025-04-12T19:27:53.129Z",
+			"modified": "2025-04-12T20:55:09.135Z",
+			"headers": []
+		},
+		{
+			"_id": "7f449913-a240-4466-a206-c20b6463f097",
+			"colId": "adc72e95-0e00-4ef7-b225-178f0dd41569",
+			"containerId": "3392c233-c19a-4fd3-aa41-78ef43f57498",
+			"name": "createNewPlaylist",
+			"url": "http://localhost:3030/playlists/create",
+			"method": "POST",
+			"sortNum": 30000,
+			"created": "2025-04-12T19:27:35.607Z",
+			"modified": "2025-04-12T19:29:31.349Z",
+			"headers": [],
+			"body": {
+				"type": "json",
+				"raw": "{\n  \"title\": \"Melhores da 30\",\n  \"tags\": [\"rap\", \"trap\"]\n}",
+				"form": []
+			}
+		},
+		{
+			"_id": "4109a0db-91f6-4b04-a1f3-33c2a091059e",
+			"colId": "adc72e95-0e00-4ef7-b225-178f0dd41569",
+			"containerId": "3392c233-c19a-4fd3-aa41-78ef43f57498",
+			"name": "patchPlaylist",
+			"url": "http://localhost:3030/playlists/update/2869",
+			"method": "PATCH",
+			"sortNum": 50000,
+			"created": "2025-04-12T19:27:41.757Z",
+			"modified": "2025-04-12T20:01:09.060Z",
+			"headers": [],
+			"body": {
+				"type": "json",
+				"raw": "{\n  \"tags\": [\"Rap\", \"Trap\", \"Drill\"]\n}",
+				"form": []
+			}
+		},
+		{
+			"_id": "7b010835-b443-4cab-98bc-5718cae5b594",
+			"colId": "adc72e95-0e00-4ef7-b225-178f0dd41569",
+			"containerId": "b544867c-bb07-4a40-965a-532ff268846b",
+			"name": "musicCreate",
+			"url": "http://localhost:3030/playlists/musics/create",
+			"method": "POST",
+			"sortNum": 60000,
+			"created": "2025-04-13T16:31:29.210Z",
+			"modified": "2025-04-13T16:36:29.225Z",
+			"headers": [],
+			"body": {
+				"type": "json",
+				"raw": "{\n  \"playlistId\": 4116,\n  \"name\": \"333\",\n  \"year\": 2025,\n  \"artist\": \"Matuê\"\n}",
+				"form": []
+			}
+		},
+		{
+			"_id": "d3e1068e-9e91-4805-833c-0b7baacc783b",
+			"colId": "adc72e95-0e00-4ef7-b225-178f0dd41569",
+			"containerId": "b544867c-bb07-4a40-965a-532ff268846b",
+			"name": "musicUpdate",
+			"url": "http://localhost:3030/playlists/musics/update",
+			"method": "PATCH",
+			"sortNum": 70000,
+			"created": "2025-04-13T16:38:17.002Z",
+			"modified": "2025-04-13T16:41:04.635Z",
+			"headers": [],
+			"body": {
+				"type": "json",
+				"raw": "{\n  \"playlistId\": \"4116\",\n  \"musicId\": \"1555\",\n  \"newName\": \"V de Vilão\"\n}",
+				"form": []
+			}
+		},
+		{
+			"_id": "909f12de-4fdf-4d2c-8375-8466020c4628",
+			"colId": "adc72e95-0e00-4ef7-b225-178f0dd41569",
+			"containerId": "b544867c-bb07-4a40-965a-532ff268846b",
+			"name": "musicRemove",
+			"url": "http://localhost:3030/playlists/musics/delete",
+			"method": "DELETE",
+			"sortNum": 80000,
+			"created": "2025-04-13T16:38:20.840Z",
+			"modified": "2025-04-13T16:41:49.444Z",
+			"headers": [],
+			"body": {
+				"type": "json",
+				"raw": "{\n  \"playlistId\": \"4116\",\n  \"musicId\": \"1555\"\n}",
+				"form": []
+			}
+		}
+	],
+	"ref": "k9aPFc1yiu8NsXfRULjy59weKOUcng9PTODN-i7YvKCywY0e1AVFLxv1Roh5eXwbn_4Ly2ngjNGc9VmQdCcFGQ"
+}
